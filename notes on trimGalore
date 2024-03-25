@@ -1,0 +1,22 @@
+
+TrimaGalore
+Quality language
+--phred33
+Qphred score (Default is 20)
+-q 30
+Adapter it wil autodetect the 13bp illumina adapters in the sequences. You don't have to specify the adapters
+--illumina
+Telling it there is paired data
+--paired
+
+-a Adapter.fasta
+--gzip
+--length default 20 --> 36
+--trim-n (Strict) no N in the sequence
+-o (DIR)
+--cores 
+
+--paired
+-q 30 thred score
+--gzip
+--
