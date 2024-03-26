@@ -1,3 +1,10 @@
+#!/bin/bash
+     #
+     #  load the module
+     source /apps/profiles/modules_asax.sh.dyn
+     module load trimgalore/0.6.7
+     #
+     #  place commands here
 
 TrimaGalore
 Quality language
@@ -22,6 +29,22 @@ Telling it there is paired data
 --
 
 Video: https://www.youtube.com/watch?v=_cKhsfRPRr8&t=1048s
-script line from video:
-trim_galore --paired --q --gzip "inputfiles" -o (directory)
+script line from video: I tried it it works :)!! This could be our relax version
+
+trim_galore --paired --q 20 --illumina DRR316901_1.fastq DRR316901_2.fastq -o trimGalore/
+# --paired is to tell the program that your using paired data
+# --q this is the Qthred score that will filter data below Qphred scroe 20, which is the default no-strict model
+# --ilumina only filter for 'AGATCGGAAGAGC' this adapter
+# not putting an adapter option it give me that the adapter is 'CTGTCTCTTATA'
+# -o where the output files should go
+
+Output =
+-rw-rw---- 1 aubclsc0324 aubclass       1899 Mar 26 14:17 DRR316901_1.fastq_trimming_report.txt
+-rw-rw---- 1 aubclsc0324 aubclass 4386613053 Mar 26 14:19 DRR316901_1_val_1.fq
+-rw-rw---- 1 aubclsc0324 aubclass       2072 Mar 26 14:19 DRR316901_2.fastq_trimming_report.txt
+-rw-rw---- 1 aubclsc0324 aubclass 4386734529 Mar 26 14:19 DRR316901_2_val_2.fq
+
+Strict version:
+trim_galore --paired --q 30 --illumina DRR316901_1.fastq DRR316901_2.fastq -o trimGalore/
+
 
