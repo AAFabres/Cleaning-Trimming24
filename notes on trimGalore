@@ -21,5 +21,7 @@ Telling it there is paired data
 --gzip
 --
 
+Video: https://www.youtube.com/watch?v=_cKhsfRPRr8&t=1048s
+script line from video:
 trim_galore --paired --q --gzip "inputfiles" -o (directory)
 
