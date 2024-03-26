@@ -20,3 +20,6 @@ Telling it there is paired data
 -q 30 thred score
 --gzip
 --
+
+trim_galore --paired --q --gzip "inputfiles" -o (directory)
+
