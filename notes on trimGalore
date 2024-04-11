@@ -27,6 +27,7 @@ Telling it there is paired data
 -q 30 thred score
 --gzip
 --
+--hardtrim3 10 #Trims 10 bases from the start of the sequence 
 
 Video: https://www.youtube.com/watch?v=_cKhsfRPRr8&t=1048s
 script line from video: I tried it it works :)!! This could be our relax version
