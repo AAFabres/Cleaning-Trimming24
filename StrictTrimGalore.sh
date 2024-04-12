@@ -23,8 +23,8 @@ do
 	      
 trim_galore --paired --q 30 --illumina --three_prime_clip_R2 10 --length 36 "$i"_1.fastq "$i"_2.fastq -o ${CD}/
 
-fastqc ${CD}/"$i"_1_trimmed.fq --outdir=${OP}/${PCQ}
-fastqc ${CD}/"$i"_2_trimmed.fq --outdir=${OP}/${PCQ}
+fastqc ${CD}/"$i"_1_val_1.fq --outdir=${OP}/${PCQ}
+fastqc ${CD}/"$i"_2_val_2.fq --outdir=${OP}/${PCQ}
 
 
 done<list	
